@@ -1,5 +1,5 @@
 # algorithms-for-8-puzzle
-implemented several search algorithms to solve the 8-puzzle problem:
+implemented several search algorithms to solve the 8-puzzle problem with Python:
 DFS, BFS, IDS, Greedy Best-First (hence-forth "Greedy"), A*, IDA*.
 
 • Search methods to be implemented (use the exact function interface ): dfs, bfs, ids, greedy, a-star, ida-star.
@@ -54,4 +54,7 @@ For example, using BFS, result is like this:
 5  moves
 Total searching time: 0.00130 seconds
 
- 
+BFS can return the optimal solution, because it always
+expands the shallowest unexpected node. However, it saves every node it searches ,so the space it
+takes is very large, which is its major problem. When the input is hard, it gets more difficult for BFS
+to obtain the result.
